@@ -108,3 +108,5 @@ Use `./tabchi-ID.sh` to run your bot normaly or use `screen ./tabchi-ID.sh` for 
 
 ###Powered by [meysamkurd](https://telegram.me/m3ys4m)
 
+Telegram Id : @M3YS4M
+

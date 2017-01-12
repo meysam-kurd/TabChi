@@ -20,13 +20,13 @@ Enter Full Sudo ID : 123456
   
    
 Then
-        ./tabchi-111.sh
+        ./TabChi-master-111.sh
 
 *****
          
 ##Anti crash
 
-        tmux new-session -s script "bash tabchi-111.sh"
+        tmux new-session -s script "bash TabChi-master-111.sh"
         
 *****    
 
@@ -38,7 +38,7 @@ Enjoy Your New Bot!
 
 ##Run
    
-Use `./tabchi-ID.sh` to run your bot normaly or use `screen ./tabchi-ID.sh` for auto launch mode (put tabchi-id in ID part)
+Use `./TabChi-master-ID.sh` to run your bot normaly or use `screen ./TabChi-master-ID.sh` for auto launch mode (put tabchi-id in ID part)
 
 ##Help and more
 

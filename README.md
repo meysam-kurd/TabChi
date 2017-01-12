@@ -20,7 +20,7 @@ Enter Full Sudo ID : 123456
   
    
 Then
-        ./TabChi-master-111.sh
+        ./tabchi-1.sh
 
 *****
          
@@ -38,7 +38,7 @@ Enjoy Your New Bot!
 
 ##Run
    
-Use `./TabChi-master-ID.sh` to run your bot normaly or use `screen ./TabChi-master-ID.sh` for auto launch mode (put tabchi-id in ID part)
+Use `./tabchi-1.sh` to run your bot normaly or use `screen ./Tabchi-ID.sh` for auto launch mode (put tabchi-id in ID part)
 
 ##Help and more
 

@@ -4,8 +4,8 @@ TG-CLI based broadcasting bot!
 
 ##Install
 
-       git clone https://github.com/meysam-kurd/TabChi-master.git
-       cd TabChi
+       git clone https://github.com/meysam-kurd/TabChi-master/
+       cd TabChi-master
        chmod 777 install.sh
        ./install.sh
 

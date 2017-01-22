@@ -15,7 +15,7 @@ TG-CLI based broadcasting bot!
    
         python3 creator.py
         
-Enter Tabchi ID : 111
+Enter Tabchi ID : 1or999
 Enter Full Sudo ID : 123456
   
    
@@ -23,10 +23,7 @@ Then
         ./tabchi-1.sh
 
 *****
-         
-##Anti crash
-
-        tmux new-session -s script "bash TabChi-master-111.sh"
+        
         
 *****    
 

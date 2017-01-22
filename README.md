@@ -15,7 +15,8 @@ TG-CLI based broadcasting bot!
    
         python3 creator.py
         
-Enter Tabchi ID : 1or999
+Enter Tabchi ID : 1
+
 Enter Full Sudo ID : 123456
   
    

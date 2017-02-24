@@ -1,22 +1,22 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-import redis
-import os
-redis = redis.Redis('localhost')
-id = input("Enter Tabchi ID (1,2,3,4,5,...) : ")
-sudo = input("Enter Full Sudo ID : ")
-source = os.popen("cat base.lua").read()
-launcher = """while true; do
-  ./telegram-cli-1222 -p tabchi-{} -s tabchi-{}.lua
-done""".format(id,id)
-source2 = source.replace("TABCHI-ID",str(id))
-newsource = open("tabchi-{}.lua".format(id),"w")
-newsource.write(source2)
-newsource.close()
-newlauncher = open("tabchi-{}.sh".format(id),"w")
-newlauncher.write(launcher)
-newlauncher.close()
-os.popen("chmod 777 tabchi-{}.sh".format(id))
-redis.set("tabchi:{}:fullsudo".format(id),sudo)
-print("Done!\nNew Tabchi Created...\nID : {}\nFull Sudo : {}\nRun : ./tabchi-{}.sh".format(id,sudo,id))
-print('Cracked Version Of Tabchi By @M3YS4M :D\ Good Luck :D')
+redis = (loadfile "redis.lua")()
+function gettabchiid()
+    local i, t, popen = 0, {}, io.popen
+    local pfile = popen('ls')
+	local last = 0
+    for filename in pfile:lines() do
+        if filename:match('tabchi%-(%d+)%.lua') and tonumber(filename:match('tabchi%-(%d+)%.lua')) >= last then
+			last = tonumber(filename:match('tabchi%-(%d+)%.lua')) + 1
+			end		
+    end
+    return last
+end
+local last = gettabchiid()
+io.write("Auto Detected Tabchi ID : "..last)
+io.write("\nEnter Full Sudo ID : ")
+local sudo=io.read()
+local text,ok = io.open("base.lua",'r'):read('*a'):gsub("TABCHI%-ID",last)
+io.open("tabchi-"..last..".lua",'w'):write(text):close()
+io.open("tabchi-"..last..".sh",'w'):write("while true; do\n./telegram-cli-1222 -p tabchi-"..last.." -s tabchi-"..last..".lua\ndone"):close()
+io.popen("chmod 777 tabchi-"..last..".sh")
+redis:set('tabchi:'..last..':fullsudo',sudo)
+print("Done!\nNew Tabchi Created...\nID : "..last.."\nFull Sudo : "..sudo.."\nRun : ./tabchi-"..last..".sh")

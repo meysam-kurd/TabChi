@@ -51,10 +51,10 @@ for see instruction and command send  /help in your bot
 
 ***
 
-##Developers\
+#Developers
 
 ##[open by (meysam-kurd)](https://t.me/m3ys4m)
 
-Telegram id : @m3ys4m
+###[Telegram id : @m3ys4m](https://t.me/m3ys4m)
 
 Enjoy Your New Bot!

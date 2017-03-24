@@ -1,7 +1,7 @@
 ##Install
 To install everything in one command (useful for VPS deployment) on Debian-based distros, use:
 ```sh
-sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgrade -y --force-yes; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev libjansson* libpython-dev make unzip git redis-server g++ autoconf -y --force-yes && git clone https://github.com/meysam-kurd/TabChi-master.git && cd TabChi-master && chmod 777 install.sh && ./install.sh -y --force-yes && lua creator.lua
+cd $HOME && git clone https://github.com/meysam-kurd/TabChi.git && cd TabChi && chmod 777 install.sh && ./install.sh && lua creator.lua
 ```
 ```
 Enter Full Sudo ID : 123456    
@@ -21,7 +21,7 @@ you can see your account Id Number in [@UserInfoBot](https://t.me/userinfobot)
 run agin your server
 
 ```
-cd TabChi-master
+cd TabChi
 lua creator.lua
 ```
 
@@ -39,22 +39,21 @@ and next bot ....
 when login your server
 
 ```
-cd TabChi-master
+cd TabChi
 ./anticrash.sh
 ```
 
-##Stay Online
-after run bot, you must send messege from the bot in the [@M3YS4M_BOT](https://t.me/M3YS4M_BOT)
-This is for stay online your bot and dely result 
+***
 
+##Instruction and commands 
+
+for see instruction and command send  /help in your bot
 
 ***
 
 ##Developers
 
 
-##[open by (@MEYSAM)](https://t.me/M3YS4M)
-
-Telegram Id : @M3YS4M
+##[open by (meysam-kurd)](https://t.me/m3ys4m)
 
 Enjoy Your New Bot!
